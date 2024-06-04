@@ -1,0 +1,235 @@
+:root {
+	--azoncode-brand: #0F52BA;
+	--azoncode-brand-bright: #2375F0;
+	--azoncode-brand-light: #e5eef7;
+	--azoncode-gold: #F6A81C;
+	--azoncode-white: #fff;
+	--azoncode-off-white: #F8F9FA;
+	--azoncode-black: #000;
+	--azoncode-light-black: #575B5E;
+	--azoncode-green: #0D9648;
+	--azoncode-red: red;
+}
+
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* In your CSS file or <style> tag in HTML */
+
+/*==============================
+ *========= Global CSS ============
+ *============================*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+
+	color: var(--azoncode-light-black);
+	/* background-color: var(--azoncode-brand); */
+}
+
+p {}
+
+a {
+	text-decoration: none;
+	color: var(--azoncode-light-black);
+}
+
+h1 {
+	font-size: 40pt;
+	font-weight: 700;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.btn-outline-primary {
+	color: var(--azoncode-light-black);
+	font-size: 19px;
+	--bs-btn-color: var(--azoncode-brand);
+	--bs-btn-border-color: var(--azoncode-light-black);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: var(--azoncode-brand);
+	--bs-btn-hover-border-color: var(--azoncode-brand);
+	--bs-btn-focus-shadow-rgb: 13, 110, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: var(--azoncode-brand);
+	--bs-btn-active-border-color: var(--azoncode-brand);
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: var(--azoncode-brand);
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: var(--azoncode-brand);
+	--bs-gradient: none;
+}
+
+/* Navbar/Menue CSS */
+.nav-left-logo {
+	padding-left: 5%;
+}
+
+/* ------- need to to change image size ------- */
+.navbar .navbar-brand img {
+	width: 200px;
+}
+
+.nav-right {
+	padding-right: 5%;
+	font-size: 19px;
+	color: var(--azoncode-light-black);
+}
+
+.navbar-nav a {
+	font-size: 19px;
+	color: var(--azoncode-light-black);
+	font-weight: 500;
+	transition: 0.03s;
+	display: flex;
+	align-items: center;
+	padding: 0px;
+}
+.navbar-nav .nav-link {
+	padding: 15px !important;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+	color: var(--azoncode-brand) !important;
+}
+
+.navbar-nav li.dropdown ul.dropdown-menu {
+	width: 325px;
+	padding-left: 9px;
+	left: 1px;
+	top: 100%;
+	background: var(--azoncode-white);
+	transition: 0.3s;
+	border-radius: 4px;
+	border: 1px solid var(--azoncode-off-white);
+}
+
+.navbar-nav li.dropdown:hover ul {
+	display: block;
+	padding: 0px;
+}
+.navbar .dropdown ul li {
+	border-bottom: 2px solid var(--azoncode-off-white);
+	padding: 13px 0px 13px 0px;
+}
+.navbar .dropdown ul a {
+	text-transform: none;
+	font-weight: 500;
+	font-size: 17px;
+	background: var(--azoncode-white);
+	padding-left: 20px;
+}
+
+.navbar .dropdown ul a:hover {
+	color: var(--azoncode-brand);
+}
+
+
+
+/*-- ----- page breadcrumb CSS ------- --*/
+.page_breadcrumb {
+	background: url(../images/page_breadcrumb.png);
+}
+
+/* Why choose us css */
+.why_choose_us {
+	background-color: var(--azoncode-brand-light);
+	padding: 30px;
+}
+
+ul.list_style {
+	padding-bottom: 20px;
+}
+
+ul.list_style li span {
+	padding-left: 10px;
+}
+
+ul.list_style li i {
+	color: var(--azoncode-brand) !important;
+}
+
+/* Service CSS */
+.services .card {
+	width: 100%;
+	height: 70px;
+	margin-bottom: 22px;
+}
+
+.services .card a {
+	width: 100%;
+	height: 100px;
+	color: var(--azoncode-light-black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.services .card:hover {
+	background-color: var(--azoncode-brand);
+}
+
+.services .card:hover a {
+	color: var(--azoncode-white);
+}
+
+.section_title {
+	color: var(--azoncode-light-black);
+	font-weight: bold;
+	font-size: 37px !important;
+	text-align: center;
+}
+
+.sub_section_title {
+	color: var(--azoncode-light-black);
+	font-size: 20px;
+	text-align: center;
+}
+
+/* footer_support_contact css */
+.footer_support_contact .footer_support_question {
+	background-color: var(--azoncode-brand-bright);
+	color: var(--azoncode-white);
+	padding-left: 10%;
+}
+
+.footer_support_contact .footer_support_number {
+	background-color: var(--azoncode-brand);
+	color: var(--azoncode-white);
+	padding-left: 3%;
+}
+
+.footer h6 {
+	color: var(--azoncode-light-black);
+	font-weight: bold;
+}
+
+.footer a {
+	color: var(--azoncode-light-black);
+	font-size: 13px;
+}
+
+.footer a:hover {
+	color: var(--azoncode-brand);
+}
+
+.footer_copyright p,
+.footer_copyright a {
+	font-size: 13px;
+}
+
+.footer_copyright a:hover {
+	font-size: 13px;
+	color: var(--azoncode-brand);
+}
